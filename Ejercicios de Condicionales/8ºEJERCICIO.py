@@ -1,0 +1,17 @@
+puntuacion = float(input("Introduce tu puntuación (0.0, 0.4, 0.6 o más): "))
+
+if puntuacion == 0.0:
+    nivel = "Inaceptable"
+elif puntuacion == 0.4:
+    nivel = "Aceptable"
+elif puntuacion >= 0.6:
+    nivel = "Meritorio"
+else:
+    nivel = None
+
+if nivel is not None:
+    dinero = puntuacion * 2400
+    print(f"Nivel de rendimiento: {nivel}")
+    print(f"Te corresponde recibir: {dinero:.2f}€")
+else:
+    print("Error: La puntuación introducida no es válida.")
