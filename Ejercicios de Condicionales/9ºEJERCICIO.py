@@ -1,4 +1,4 @@
-edad = float(input("Dime que edad tienes: "))
+edad = int(input("Dime que edad tienes: "))
 
 if edad <= 4 :
     print ('Puedes entrar gratis')
